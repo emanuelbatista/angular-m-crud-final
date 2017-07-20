@@ -15,7 +15,7 @@ import { FormLineGenericComponent } from "app/widget/FormLineGenericComponent";
 
 export let defineRules = (angularm: AngularmService) => {
     angularm
-        .ptr('form_line', 'client', '*', 'number', FormLineComponent, { inputType: 'number' })
+        .ptr('form_line', '*', 'name', null, FormLineGenericComponent, {inputType: 'text', fieldBlue: true})
         .dptr('form_line', FormLineGenericComponent, { inputType: 'text' })
         .dpr('show_line', ShowLineComponent)
         .detr('list_entities', TableListComponent)
