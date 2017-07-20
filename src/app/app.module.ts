@@ -1,3 +1,4 @@
+import { FormLinePersonalizedComponent } from './widget/FormLinePersonalizedComponent';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
@@ -42,7 +43,8 @@ const appRoutes: Routes = [
     ShowLineLocalComponent,
     FormLineLocalComponent,
     CreateFormComponent,
-    FormLineGenericComponent
+    FormLineGenericComponent,
+    FormLinePersonalizedComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -74,7 +76,8 @@ const appRoutes: Routes = [
     ShowLineLocalComponent,
     FormLineLocalComponent,
     CreateFormComponent,
-    FormLineGenericComponent
+    FormLineGenericComponent,
+    FormLinePersonalizedComponent
   ],
   bootstrap: [AppComponent]
 })
